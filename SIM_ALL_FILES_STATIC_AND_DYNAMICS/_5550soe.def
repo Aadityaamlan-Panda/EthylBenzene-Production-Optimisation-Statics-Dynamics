@@ -1,0 +1,11 @@
+SLAVE:
+INPUT: _5550soe.inm
+MODNAME: apmain
+RUNID: _5550soe
+NEW_RUNID: _5550soe
+OLD_RUNID: _5550soe
+PDF: _5550soe.appdf
+USERNAME: aadityaap22
+XMOD: C:\Program Files\AspenTech\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _5550soe

@@ -1,0 +1,10 @@
+INPUT: LAB 11.inm
+MODNAME: apmain
+RUNID: LAB 11
+NEW_RUNID: LAB 11
+OLD_RUNID: LAB 11
+PDF: LAB 11.appdf
+USERNAME: aadityaap22
+XMOD: C:\Program Files\AspenTech\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _5958txe.ads

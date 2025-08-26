@@ -1,0 +1,11 @@
+SLAVE:
+INPUT: _5958txe.inm
+MODNAME: apmain
+RUNID: _5958txe
+NEW_RUNID: _5958txe
+OLD_RUNID: _5958txe
+PDF: _5958txe.appdf
+USERNAME: aadityaap22
+XMOD: C:\Program Files\AspenTech\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _5958txe

@@ -1,0 +1,1382 @@
+
+ *** CALCULATION TRACE ***
+
+
+<set objective = None>
+
+ Report Writer entered                                                            Time =    954.79
+
+ Results generated                                                                Time =    954.87
+
+ Report Writer entered                                                            Time =    956.48
+
+ Results generated                                                                Time =    956.53
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
+
+ Report Writer entered                                                            Time =   1014.32
+
+ Results generated                                                                Time =   1014.36
+
+ Report Writer entered                                                            Time =   1015.27
+
+ Results generated                                                                Time =   1015.31
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
+
+ Report Writer entered                                                            Time =   1033.39
+
+ Results generated                                                                Time =   1033.43
+
+ Report Writer entered                                                            Time =   1034.35
+
+ Results generated                                                                Time =   1034.39
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
+
+ *** CALCULATION TRACE ***
+
+
+<set objective = None>
+
+
+*** INPUT SPECIFICATION MESSAGES ***
+
+ CHANGES WERE MADE TO BLOCK        C1       04/02/2025   01:39:14:09 
+ BLOCK C1 RADFRAC
+     PARAM NSTAGE=11 ALGORITHM=STANDARD HYDRAULIC=YES MAXOL=25  &
+         DAMPING=NONE
+     COL-CONFIG CONDENSER=PARTIAL-V
+     FEEDS 2 5 ON-STAGE
+     PRODUCTS C1B 11 L / C1D 1 V
+     P-SPEC 1 8.
+     COL-SPECS DP-STAGE=.0100000000 MOLE-D=5.56053342 MOLE-RR=0.9
+     SPEC 1 TEMP 321.1500000 STAGE=1  &
+         SPEC-DESCRIP="Stage temperature, 321.15, 1"
+     VARY 1 MOLE-D 1.000000000 20.00000000
+     REPORT HYDRAULIC
+
+ DISABLE      IS  NEW 04/02/2025   01:39:14:09 
+ DISABLE
+     SENSITIVITY S-1 S-2 S-3 S-4
+
+ PDF updated                                                                      TIME =   8901.26
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+ 
+ CALCULATOR BLOCK: C-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-2 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-3 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-4 WILL BE INTERPRETED 
+ 
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8902.15
+
+Calculations begin                                                              time   8902.17
+
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   8902.18
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.19894E-03
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   8902.21
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   8902.22
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.58509E-03
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   8902.22
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   8902.22
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   8902.22
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   8902.22
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   8902.22
+      ITER   0 For Tear Streams: 3         C2B       BENRCY
+
+      UOS BLOCK B13      MODEL: PUMP                                              TIME =   8902.22
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+
+      UOS BLOCK B15      MODEL: VALVE                                             TIME =   8902.22
+      NO. TEMP ITER =    4     TEMP =  424.480    
+      KODE = 1  NTRIAL =   2  T = 424.4802  P =  250000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2500E+06 PRES DROP =   0.8830E+06
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   8902.22
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   12     0.13899E-01
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   8902.23
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   8902.23
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK B3       MODEL: VALVE                                             TIME =   8902.23
+      NO. TEMP ITER =    6     TEMP =  301.396    
+      KODE = 1  NTRIAL =   2  T = 301.3961  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B18      MODEL: MIXER                                             TIME =   8902.23
+      NO. TEMP ITER =    6     TEMP =  329.972    
+      KODE = 1  NTRIAL =   3  T = 329.9722  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK CSTR1    MODEL: RCSTR                                             TIME =   8902.23
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q =-2.137522E+06
+      REACTOR DUTY = -0.213752E+07  VOLUME =   200.000      RES TIME =   28942.6    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B5       MODEL: PUMP                                              TIME =   8902.26
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+
+      UOS BLOCK B6       MODEL: VALVE                                             TIME =   8902.26
+      NO. TEMP ITER =    4     TEMP =  424.290    
+      KODE = 1  NTRIAL =   4  T = 424.2903  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1000E+07
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   8902.26
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   8902.26
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   8902.26
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.12153E-04
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   8902.26
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   8902.26
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.11854E-03
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   8902.26
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   8902.26
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   8902.26
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   8902.26
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   8902.26
+      ITER   1 For Tear Streams: 3         C2B       BENRCY
+
+  LOOP $OLVER03 ITER    1:     *** CONVERGED *** , MAX ERR/TOL     0.39395E-01    TIME =   8902.27
+
+      UOS BLOCK B9       MODEL: VALVE                                             TIME =   8902.30
+      NO. TEMP ITER =    4     TEMP =  315.712    
+      KODE = 1  NTRIAL =   4  T = 315.7121  P =  300000.      V =  1.00000      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B8       MODEL: PUMP                                              TIME =   8902.30
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+
+      UOS BLOCK B16      MODEL: VALVE                                             TIME =   8902.30
+      NO. TEMP ITER =    4     TEMP =  415.354    
+      KODE = 1  NTRIAL =   2  T = 415.3541  P =  310000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.3100E+06 PRES DROP =   0.8000E+06
+
+      GENERATING RESULTS FOR UOS BLOCK B2       MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   3  T = 298.1500  P =  15180.1      V =  0.00000      Q = -131.960    
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+      NPSH AVAIL =   97.26    
+
+      GENERATING RESULTS FOR UOS BLOCK B5       MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   5  T = 423.1500  P = 1.394131E+06  V =  0.00000      Q = -1428.34    
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+      NPSH AVAIL =   832.3    
+
+      GENERATING RESULTS FOR UOS BLOCK B12      MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   4  T = 356.1942  P =  110000.      V =  0.00000      Q =-1.158565E-09
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B13      MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   3  T = 423.2705  P =  133000.      V =  0.00000      Q =-4.747715E-04
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B8       MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   3  T = 414.1378  P =  110000.      V =  0.00000      Q = 2.999552E-05
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B11      MODEL: PUMP                       TIME =   8902.30
+      KODE = 5  NTRIAL =   3  T = 472.5080  P =  138000.      V =  0.00000      Q = 1.870929E-05
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+      NPSH AVAIL =   0.000    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8902.30
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8902.30
+
+
+*** INPUT SPECIFICATION MESSAGES ***
+
+ CHANGES WERE MADE TO BLOCK        C1       04/02/2025   01:40:13:99 
+ BLOCK C1 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=11 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES
+     COL-CONFIG CONDENSER=PARTIAL-V CA-CONFIG=INT-1
+     FEEDS 2 5 ON-STAGE
+     PRODUCTS C1B 11 L / C1D 1 V
+     P-SPEC 1 8.
+     COL-SPECS DP-STAGE=.0100000000 MOLE-D=5.56053342 MOLE-RR=0.9
+     SPEC 1 TEMP 321.1500000 STAGE=1  &
+         SPEC-DESCRIP="Stage temperature, 321.15, 1"
+     VARY 1 MOLE-D 1.000000000 20.00000000
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=10 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=187.4498562 <mm>  &
+         DC-WBOT-SIDE=187.4498562 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 10 SIEVE
+
+ CHANGES WERE MADE TO BLOCK        C2       04/02/2025   01:40:13:99 
+ BLOCK C2 RADFRAC
+     PARAM NSTAGE=24 ALGORITHM=STANDARD HYDRAULIC=YES MAXOL=25  &
+         DAMPING=NONE
+     COL-CONFIG CONDENSER=TOTAL
+     FEEDS 10 8 ON-STAGE
+     PRODUCTS C2B 24 L / C2D 1 L
+     P-SPEC 1 1.1
+     COL-SPECS QN=1011.8 DP-STAGE=0.01 MOLE-D=93.3
+     REPORT HYDRAULIC
+
+ SENSITIVITY  S-2      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:40:13:99 
+ SENSITIVITY S-2
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=MOLE-D SENTENCE=COL-SPECS  &
+         UOM="kmol/hr"
+     RANGE OPT-LIST=RANGE LOWER="93" UPPER="94" INCR="0.1"
+
+ SENSITIVITY  S-3      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:40:13:99 
+ SENSITIVITY S-3
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=QN SENTENCE=COL-SPECS UOM= &
+         "kW"
+     RANGE OPT-LIST=RANGE LOWER="972" UPPER="1035" INCR="0.1"
+
+ DISABLE      IS  NEW 04/02/2025   01:40:13:99 
+ DISABLE
+     SENSITIVITY S-1 S-2 S-3 S-4
+
+ PDF updated                                                                      TIME =   8961.13
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+
+
+ 
+ CALCULATOR BLOCK: C-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-4 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-2 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-3 WILL BE INTERPRETED 
+ 
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8961.18
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B4 
+      $OLVER03 B13 B15 C3 B11 B17 B3 B18 CSTR1 B5 B6 CSTR2 B7 C1 B10 C2 
+      |  B12 B14 C-1 B2 
+      (RETURN $OLVER03) 
+      B9 B8 B16 
+
+
+Calculations begin                                                              time   8961.21
+
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   8961.21
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.17020E-05
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   8961.22
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   8961.22
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.28017E-04
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   8961.22
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   8961.22
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   8961.22
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q = 2.073900E-10
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   8961.22
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   8961.22
+      ITER   0 For Tear Streams: 3         C2B       BENRCY
+
+      UOS BLOCK B13      MODEL: PUMP                                              TIME =   8961.22
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+
+      UOS BLOCK B15      MODEL: VALVE                                             TIME =   8961.22
+      NO. TEMP ITER =    4     TEMP =  424.480    
+      KODE = 1  NTRIAL =   2  T = 424.4802  P =  250000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2500E+06 PRES DROP =   0.8830E+06
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   8961.22
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   11     0.16886E-02
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   8961.23
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK B3       MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    6     TEMP =  301.396    
+      KODE = 1  NTRIAL =   2  T = 301.3961  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B18      MODEL: MIXER                                             TIME =   8961.23
+      NO. TEMP ITER =    6     TEMP =  329.972    
+      KODE = 1  NTRIAL =   3  T = 329.9722  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK CSTR1    MODEL: RCSTR                                             TIME =   8961.23
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q =-2.137522E+06
+      REACTOR DUTY = -0.213752E+07  VOLUME =   200.000      RES TIME =   28942.6    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B5       MODEL: PUMP                                              TIME =   8961.23
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+
+      UOS BLOCK B6       MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    4     TEMP =  424.290    
+      KODE = 1  NTRIAL =   4  T = 424.2903  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1000E+07
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   8961.23
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   8961.23
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.27116E-05
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   8961.23
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   8961.23
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.61788E-04
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   8961.23
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   8961.23
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =-2.073900E-10
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   8961.23
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   8961.23
+      ITER   1 For Tear Streams: 3         C2B       BENRCY
+
+  LOOP $OLVER03 ITER    1:     *** CONVERGED *** , MAX ERR/TOL    -0.14138E-01    TIME =   8961.23
+
+      UOS BLOCK B9       MODEL: VALVE                                             TIME =   8961.23
+      NO. TEMP ITER =    4     TEMP =  315.712    
+      KODE = 1  NTRIAL =   4  T = 315.7121  P =  300000.      V =  1.00000      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B8       MODEL: PUMP                                              TIME =   8961.24
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+
+      UOS BLOCK B16      MODEL: VALVE                                             TIME =   8961.24
+      NO. TEMP ITER =    4     TEMP =  415.354    
+      KODE = 1  NTRIAL =   2  T = 415.3541  P =  310000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.3100E+06 PRES DROP =   0.8000E+06
+
+      GENERATING RESULTS FOR UOS BLOCK B2       MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   3  T = 298.1500  P =  15180.1      V =  0.00000      Q = -131.960    
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+      NPSH AVAIL =   97.26    
+
+      GENERATING RESULTS FOR UOS BLOCK B5       MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   5  T = 423.1500  P = 1.394131E+06  V =  0.00000      Q = -1428.34    
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+      NPSH AVAIL =   832.3    
+
+      GENERATING RESULTS FOR UOS BLOCK B12      MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   4  T = 356.1942  P =  110000.      V =  0.00000      Q = 1.930942E-10
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B13      MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   3  T = 423.2705  P =  133000.      V =  0.00000      Q = 7.196603E-04
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B8       MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   3  T = 414.1378  P =  110000.      V =  0.00000      Q = 2.999526E-05
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B11      MODEL: PUMP                       TIME =   8961.24
+      KODE = 5  NTRIAL =   3  T = 472.5080  P =  138000.      V =  0.00000      Q = 1.871271E-05
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+      NPSH AVAIL =   0.000    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8961.24
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   8961.24
+
+
+*** INPUT SPECIFICATION MESSAGES ***
+
+ CHANGES WERE MADE TO BLOCK        C1       04/02/2025   01:41:23:99 
+ BLOCK C1 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=11 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES
+     COL-CONFIG CONDENSER=PARTIAL-V CA-CONFIG=INT-1
+     FEEDS 2 5 ON-STAGE
+     PRODUCTS C1B 11 L / C1D 1 V
+     P-SPEC 1 8.
+     COL-SPECS DP-STAGE=.0100000000 MOLE-D=5.56053342 MOLE-RR=0.9
+     SPEC 1 TEMP 321.1500000 STAGE=1  &
+         SPEC-DESCRIP="Stage temperature, 321.15, 1"
+     VARY 1 MOLE-D 1.000000000 20.00000000
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=10 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=187.4498564 <mm>  &
+         DC-WBOT-SIDE=187.4498564 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 10 SIEVE
+
+ CHANGES WERE MADE TO BLOCK        C2       04/02/2025   01:41:23:99 
+ BLOCK C2 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=24 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES
+     COL-CONFIG CONDENSER=TOTAL CA-CONFIG=INT-1
+     FEEDS 10 8 ON-STAGE
+     PRODUCTS C2B 24 L / C2D 1 L
+     P-SPEC 1 1.1
+     COL-SPECS QN=1011.8 DP-STAGE=0.01 MOLE-D=93.3
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=23 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=190.4788394 <mm>  &
+         DC-WBOT-SIDE=190.4788394 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 23 SIEVE
+
+ CHANGES WERE MADE TO BLOCK        C3       04/02/2025   01:41:23:99 
+ BLOCK C3 RADFRAC
+     PARAM NSTAGE=29 ALGORITHM=STANDARD HYDRAULIC=YES MAXOL=25  &
+         DAMPING=NONE
+     COL-CONFIG CONDENSER=TOTAL
+     FEEDS 17 6 ON-STAGE
+     PRODUCTS C3D 1 L / C3B 29 L
+     P-SPEC 1 1.1
+     COL-SPECS D:F=0.9506 DP-STAGE=0.01 MOLE-RR=0.918624626
+     SPEC 2 MOLE-FRAC 0.999 COMPS=EB STREAMS=C3D  &
+         SPEC-DESCRIP="Mole purity, 0.999, PRODUCT"
+     VARY 2 MOLE-RR 0.01 100.
+     REPORT HYDRAULIC
+
+ SENSITIVITY  S-2      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:41:23:99 
+ SENSITIVITY S-2
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=MOLE-D SENTENCE=COL-SPECS  &
+         UOM="kmol/hr"
+     RANGE OPT-LIST=RANGE LOWER="93" UPPER="94" INCR="0.1"
+
+ SENSITIVITY  S-3      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:41:23:99 
+ SENSITIVITY S-3
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=QN SENTENCE=COL-SPECS UOM= &
+         "kW"
+     RANGE OPT-LIST=RANGE LOWER="972" UPPER="1035" INCR="0.1"
+
+ SENSITIVITY  S-4      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:41:23:99 
+ SENSITIVITY S-4
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C3 VARIABLE=D:F SENTENCE=COL-SPECS
+     RANGE OPT-LIST=RANGE LOWER="0.94" UPPER="0.9506"  &
+         INCR="0.0001"
+
+ DISABLE      IS  NEW 04/02/2025   01:41:23:99 
+ DISABLE
+     SENSITIVITY S-1 S-2 S-3 S-4
+
+ PDF updated                                                                      TIME =   9030.92
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+
+
+ 
+ CALCULATOR BLOCK: C-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-2 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-3 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-4 WILL BE INTERPRETED 
+ 
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B4 
+      $OLVER03 B13 B15 C3 B11 B17 B3 B18 CSTR1 B5 B6 CSTR2 B7 C1 B10 C2 
+      |  B12 B14 C-1 B2 
+      (RETURN $OLVER03) 
+      B9 B8 B16 
+
+
+Calculations begin                                                              time   9030.96
+
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   9030.96
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   11     0.93040E-03
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   9030.96
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   9030.96
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   9030.96
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   9030.96
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   9030.96
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.10645E-05
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   9030.96
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   9030.96
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.66810E-04
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   9030.96
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   9030.96
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   9030.96
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   9030.96
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   9030.96
+      ITER   0 For Tear Streams: 3         C2B       BENRCY
+
+      UOS BLOCK B13      MODEL: PUMP                                              TIME =   9030.96
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+
+      UOS BLOCK B15      MODEL: VALVE                                             TIME =   9030.96
+      NO. TEMP ITER =    4     TEMP =  424.480    
+      KODE = 1  NTRIAL =   2  T = 424.4802  P =  250000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2500E+06 PRES DROP =   0.8830E+06
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   9030.96
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   11     0.10006E-02
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   9030.97
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK B3       MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    6     TEMP =  301.396    
+      KODE = 1  NTRIAL =   2  T = 301.3961  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B18      MODEL: MIXER                                             TIME =   9030.97
+      NO. TEMP ITER =    6     TEMP =  329.972    
+      KODE = 1  NTRIAL =   3  T = 329.9722  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK CSTR1    MODEL: RCSTR                                             TIME =   9030.97
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q =-2.137522E+06
+      REACTOR DUTY = -0.213752E+07  VOLUME =   200.000      RES TIME =   28942.6    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B5       MODEL: PUMP                                              TIME =   9030.97
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+
+      UOS BLOCK B6       MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    4     TEMP =  424.290    
+      KODE = 1  NTRIAL =   4  T = 424.2903  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1000E+07
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   9030.97
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   9030.97
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.11046E-05
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   9030.97
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   9030.97
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.20288E-04
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   9030.97
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   9030.97
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   9030.97
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   9030.97
+      ITER   1 For Tear Streams: 3         C2B       BENRCY
+
+  LOOP $OLVER03 ITER    1:     *** CONVERGED *** , MAX ERR/TOL     0.13380E-01    TIME =   9030.97
+
+      UOS BLOCK B9       MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    4     TEMP =  315.712    
+      KODE = 1  NTRIAL =   4  T = 315.7121  P =  300000.      V =  1.00000      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B8       MODEL: PUMP                                              TIME =   9030.97
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+
+      UOS BLOCK B16      MODEL: VALVE                                             TIME =   9030.97
+      NO. TEMP ITER =    4     TEMP =  415.354    
+      KODE = 1  NTRIAL =   2  T = 415.3541  P =  310000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.3100E+06 PRES DROP =   0.8000E+06
+
+      GENERATING RESULTS FOR UOS BLOCK B2       MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   3  T = 298.1500  P =  15180.1      V =  0.00000      Q = -131.960    
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+      NPSH AVAIL =   97.26    
+
+      GENERATING RESULTS FOR UOS BLOCK B5       MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   5  T = 423.1500  P = 1.394131E+06  V =  0.00000      Q = -1428.34    
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+      NPSH AVAIL =   832.3    
+
+      GENERATING RESULTS FOR UOS BLOCK B12      MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   4  T = 356.1942  P =  110000.      V =  0.00000      Q =-7.723769E-10
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B13      MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   3  T = 423.2705  P =  133000.      V =  0.00000      Q =-4.711613E-05
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B8       MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   3  T = 414.1378  P =  110000.      V =  0.00000      Q = 2.999562E-05
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B11      MODEL: PUMP                       TIME =   9030.97
+      KODE = 5  NTRIAL =   3  T = 472.5080  P =  138000.      V =  0.00000      Q = 1.871254E-05
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+      NPSH AVAIL =   0.000    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   9030.97
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   9030.97
+
+
+*** INPUT SPECIFICATION MESSAGES ***
+
+ CHANGES WERE MADE TO BLOCK        C1       04/02/2025   01:42:50:99 
+ BLOCK C1 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=11 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES
+     COL-CONFIG CONDENSER=PARTIAL-V CA-CONFIG=INT-1
+     FEEDS 2 5 ON-STAGE
+     PRODUCTS C1B 11 L / C1D 1 V
+     P-SPEC 1 8.
+     COL-SPECS DP-STAGE=.0100000000 MOLE-D=5.56053342 MOLE-RR=0.9
+     SPEC 1 TEMP 321.1500000 STAGE=1  &
+         SPEC-DESCRIP="Stage temperature, 321.15, 1"
+     VARY 1 MOLE-D 1.000000000 20.00000000
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=10 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=187.4498559 <mm>  &
+         DC-WBOT-SIDE=187.4498559 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 10 SIEVE
+
+ CHANGES WERE MADE TO BLOCK        C2       04/02/2025   01:42:50:99 
+ BLOCK C2 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=24 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES
+     COL-CONFIG CONDENSER=TOTAL CA-CONFIG=INT-1
+     FEEDS 10 8 ON-STAGE
+     PRODUCTS C2B 24 L / C2D 1 L
+     P-SPEC 1 1.1
+     COL-SPECS QN=1011.8 DP-STAGE=0.01 MOLE-D=93.3
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=23 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=190.4788393 <mm>  &
+         DC-WBOT-SIDE=190.4788393 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 23 SIEVE
+
+ CHANGES WERE MADE TO BLOCK        C3       04/02/2025   01:42:50:99 
+ BLOCK C3 RADFRAC
+     SUBOBJECTS INTERNALS = CS-1
+     PARAM NSTAGE=29 ALGORITHM=STANDARD HYDRAULIC=NO MAXOL=25  &
+         DAMPING=NONE
+     PARAM2 STATIC-DP=YES OLD-SULZER=NO
+     COL-CONFIG CONDENSER=TOTAL CA-CONFIG=INT-1
+     FEEDS 17 6 ON-STAGE
+     PRODUCTS C3D 1 L / C3B 29 L
+     P-SPEC 1 1.1
+     COL-SPECS D:F=0.9506 DP-STAGE=0.01 MOLE-RR=0.918624626
+     SPEC 2 MOLE-FRAC 0.999 COMPS=EB STREAMS=C3D  &
+         SPEC-DESCRIP="Mole purity, 0.999, PRODUCT"
+     VARY 2 MOLE-RR 0.01 100.
+     REPORT NOHYDRAULIC
+     INTERNALS CS-1 STAGE1=2 STAGE2=28 P-UPDATE=NO  &
+         TRAYTYPE=SIEVE NPASS=1 SYSFAC=1.000000000  &
+         OVER-DESIGN=1.000000000 WEIR-HT=50.80000000 <mm>  &
+         DC-CLEAR=38.10000000 <mm> DC-WTOP-SIDE=204.6788191 <mm>  &
+         DC-WBOT-SIDE=204.6788191 <mm> HOLE-DIAM=12.70000000 <mm>  &
+         HOLE-AREA=.1000000000 FLOOD-METH=GLITSCH6  &
+         DECK-THICK=0.134 <IN> PCT-FLOOD-FA=80.00000000  &
+         AER-PARAM-M=1.000000000 MAX-DC-LOAD=GLITSCH  &
+         MAX-ACC-DP=.0250000000 MAX-PCT-DCB=100.0000000  &
+         MAX-PCT-ENT=10.00000000 MIN-WEIR-LD=1.24194040E-3  &
+         MAX-WEIR-LD=.0326033908 MIN-PCT-DCA=.1000000000
+     TRAY-SIZE 1 2 28 SIEVE
+
+ SENSITIVITY  S-2      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:42:50:99 
+ SENSITIVITY S-2
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=MOLE-D SENTENCE=COL-SPECS  &
+         UOM="kmol/hr"
+     RANGE OPT-LIST=RANGE LOWER="93" UPPER="94" INCR="0.1"
+
+ SENSITIVITY  S-3      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:42:50:99 
+ SENSITIVITY S-3
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C2 VARIABLE=QN SENTENCE=COL-SPECS UOM= &
+         "kW"
+     RANGE OPT-LIST=RANGE LOWER="972" UPPER="1035" INCR="0.1"
+
+ SENSITIVITY  S-4      IS GENERATED BECAUSE OF OTHER CHANGES 04/02/2025   01:42:50:99 
+ SENSITIVITY S-4
+     DEFINE Q1 BLOCK-VAR BLOCK=C1 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q2 BLOCK-VAR BLOCK=C2 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     DEFINE Q3 BLOCK-VAR BLOCK=C3 VARIABLE=REB-DUTY  &
+         SENTENCE=RESULTS UOM="kW"
+     TABULATE 1 "Q1"
+     TABULATE 2 "Q2"
+     TABULATE 3 "Q3"
+     TABULATE 4 "Q1+Q2+Q3"
+     VARY BLOCK-VAR BLOCK=C3 VARIABLE=D:F SENTENCE=COL-SPECS
+     RANGE OPT-LIST=RANGE LOWER="0.94" UPPER="0.9506"  &
+         INCR="0.0001"
+
+ DISABLE      IS  NEW 04/02/2025   01:42:50:99 
+ DISABLE
+     SENSITIVITY S-1 S-2 S-3 S-4
+
+ PDF updated                                                                      TIME =   9117.36
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+
+
+ 
+ CALCULATOR BLOCK: C-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-1 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-2 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-3 WILL BE INTERPRETED 
+ SENSITIVITY BLOCK: S-4 WILL BE INTERPRETED 
+ 
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B4 
+      $OLVER03 B13 B15 C3 B11 B17 B3 B18 CSTR1 B5 B6 CSTR2 B7 C1 B10 C2 
+      |  B12 B14 C-1 B2 
+      (RETURN $OLVER03) 
+      B9 B8 B16 
+
+
+Calculations begin                                                              time   9117.42
+
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   9117.42
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   11     0.43888E-03
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   9117.42
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   9117.42
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   9117.42
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   9117.42
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   9117.43
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.51766E-06
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   9117.43
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   9117.43
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.95811E-05
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   9117.43
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   9117.43
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   9117.43
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   9117.43
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   9117.43
+      ITER   0 For Tear Streams: 3         C2B       BENRCY
+
+      UOS BLOCK B13      MODEL: PUMP                                              TIME =   9117.43
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+
+      UOS BLOCK B15      MODEL: VALVE                                             TIME =   9117.43
+      NO. TEMP ITER =    4     TEMP =  424.480    
+      KODE = 1  NTRIAL =   2  T = 424.4802  P =  250000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2500E+06 PRES DROP =   0.8830E+06
+
+      UOS BLOCK C3       MODEL: RADFRAC                                           TIME =   9117.43
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3   11     0.87707E-03
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.91783        0.10000E-01     100.00    
+
+      UOS BLOCK B11      MODEL: PUMP                                              TIME =   9117.43
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+
+      UOS BLOCK B17      MODEL: VALVE                                             TIME =   9117.43
+      NO. TEMP ITER =    6     TEMP =  477.079    
+      KODE = 1  NTRIAL =   2  T = 477.0786  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.6380E+06
+
+      UOS BLOCK B3       MODEL: VALVE                                             TIME =   9117.43
+      NO. TEMP ITER =    6     TEMP =  301.396    
+      KODE = 1  NTRIAL =   2  T = 301.3961  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B18      MODEL: MIXER                                             TIME =   9117.43
+      NO. TEMP ITER =    6     TEMP =  329.972    
+      KODE = 1  NTRIAL =   3  T = 329.9722  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK CSTR1    MODEL: RCSTR                                             TIME =   9117.43
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q =-2.137522E+06
+      REACTOR DUTY = -0.213752E+07  VOLUME =   200.000      RES TIME =   28942.6    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B5       MODEL: PUMP                                              TIME =   9117.43
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+
+      UOS BLOCK B6       MODEL: VALVE                                             TIME =   9117.43
+      NO. TEMP ITER =    4     TEMP =  424.290    
+      KODE = 1  NTRIAL =   4  T = 424.2903  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1000E+07
+
+      UOS BLOCK CSTR2    MODEL: RCSTR                                             TIME =   9117.43
+      KODE = 2   NO. TEMP ITER =    1     TEMP =  423.150    
+      KPHASE =    2 KODE =    2 T =  423.150     P = 2.000000E+06 Q = -45511.0    
+      REACTOR DUTY =  -45511.0      VOLUME =   200.000      RES TIME =   27950.1    
+      REACTOR T =   423.150      P =  2.000000E+06  V =   0.00000    
+
+      UOS BLOCK B7       MODEL: VALVE                                             TIME =   9117.44
+      NO. TEMP ITER =    4     TEMP =  423.258    
+      KODE = 1  NTRIAL =   3  T = 423.2585  P = 1.500000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.1500E+07 PRES DROP =   0.5000E+06
+
+      UOS BLOCK C1       MODEL: RADFRAC                                           TIME =   9117.44
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    3    7     0.44397E-06
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1         0.15446E-02    0.27778E-03    0.55556E-02
+
+      UOS BLOCK B10      MODEL: VALVE                                             TIME =   9117.44
+      KODE = 1  NTRIAL =   7  T = 426.9261  P =  300000.      V = 0.334595      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5100E+06
+
+      UOS BLOCK C2       MODEL: RADFRAC                                           TIME =   9117.44
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    1     0.55520E-05
+
+      UOS BLOCK B12      MODEL: PUMP                                              TIME =   9117.44
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+
+      UOS BLOCK B14      MODEL: VALVE                                             TIME =   9117.44
+      NO. TEMP ITER =    6     TEMP =  358.795    
+      KODE = 1  NTRIAL =   3  T = 358.7950  P = 2.000000E+06  V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.2000E+07 PRES DROP =   0.1100E+06
+
+      CALCULATOR BLOCK C-1                                                        TIME =   9117.44
+      ---FLASH STREAM FB      :
+      KODE = 2  NTRIAL =   1  T = 298.1500  P =  100000.      V =  0.00000      Q =-2.073900E-10
+
+      UOS BLOCK B2       MODEL: PUMP                                              TIME =   9117.44
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+
+      CONVERGENCE BLOCK $OLVER03  METHOD: WEGSTEIN                                TIME =   9117.44
+      ITER   1 For Tear Streams: 3         C2B       BENRCY
+
+  LOOP $OLVER03 ITER    1:     *** CONVERGED *** , MAX ERR/TOL     0.36535E-02    TIME =   9117.44
+
+      UOS BLOCK B9       MODEL: VALVE                                             TIME =   9117.44
+      NO. TEMP ITER =    4     TEMP =  315.712    
+      KODE = 1  NTRIAL =   4  T = 315.7121  P =  300000.      V =  1.00000      Q =  0.00000    
+      OUTLET PRES =   0.3000E+06 PRES DROP =   0.5000E+06
+
+      UOS BLOCK B8       MODEL: PUMP                                              TIME =   9117.44
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+
+      UOS BLOCK B16      MODEL: VALVE                                             TIME =   9117.44
+      NO. TEMP ITER =    4     TEMP =  415.354    
+      KODE = 1  NTRIAL =   2  T = 415.3541  P =  310000.      V =  0.00000      Q =  0.00000    
+      OUTLET PRES =   0.3100E+06 PRES DROP =   0.8000E+06
+
+      GENERATING RESULTS FOR UOS BLOCK B2       MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   3  T = 298.1500  P =  15180.1      V =  0.00000      Q = -131.960    
+      VOL-FLOW   =  0.2493E-02 , DELTA P    =  0.2400E+07 , PUMP EFF   =  0.4047    
+      FLUID PWR  =   5984.     , BRAKE PWR  =  0.1479E+05 , ELEC PWR   =  0.1479E+05
+      NPSH AVAIL =   97.26    
+
+      GENERATING RESULTS FOR UOS BLOCK B5       MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   5  T = 423.1500  P = 1.394131E+06  V =  0.00000      Q = -1428.34    
+      VOL-FLOW   =  0.6910E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.5472    
+      FLUID PWR  =   6910.     , BRAKE PWR  =  0.1263E+05 , ELEC PWR   =  0.1263E+05
+      NPSH AVAIL =   832.3    
+
+      GENERATING RESULTS FOR UOS BLOCK B12      MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   4  T = 356.1942  P =  110000.      V =  0.00000      Q = 1.930942E-10
+      VOL-FLOW   =  0.2506E-02 , DELTA P    =  0.2000E+07 , PUMP EFF   =  0.4055    
+      FLUID PWR  =   5013.     , BRAKE PWR  =  0.1236E+05 , ELEC PWR   =  0.1236E+05
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B13      MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   3  T = 423.2705  P =  133000.      V =  0.00000      Q =-2.640265E-04
+      VOL-FLOW   =  0.4207E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4809    
+      FLUID PWR  =   4207.     , BRAKE PWR  =   8747.     , ELEC PWR   =   8747.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B8       MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   3  T = 414.1378  P =  110000.      V =  0.00000      Q = 2.999619E-05
+      VOL-FLOW   =  0.3896E-02 , DELTA P    =  0.1000E+07 , PUMP EFF   =  0.4701    
+      FLUID PWR  =   3896.     , BRAKE PWR  =   8286.     , ELEC PWR   =   8286.    
+      NPSH AVAIL =   0.000    
+
+      GENERATING RESULTS FOR UOS BLOCK B11      MODEL: PUMP                       TIME =   9117.44
+      KODE = 5  NTRIAL =   3  T = 472.5080  P =  138000.      V =  0.00000      Q = 1.871250E-05
+      VOL-FLOW   =  0.2752E-03 , DELTA P    =  0.2500E+07 , PUMP EFF   =  0.2957    
+      FLUID PWR  =   688.1     , BRAKE PWR  =   2327.     , ELEC PWR   =   2327.    
+      NPSH AVAIL =   0.000    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   9117.44
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =   9117.44
+
+ Report Writer entered                                                            Time =   9142.37
+
+ Results generated                                                                Time =   9142.43
+
+ Report Writer entered                                                            Time =   9143.75
+
+ Results generated                                                                Time =   9143.81
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
+
+ Report Writer entered                                                            Time =   9188.47
+
+ Results generated                                                                Time =   9188.52
+
+ Report Writer entered                                                            Time =   9189.83
+
+ Results generated                                                                Time =   9189.89
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
